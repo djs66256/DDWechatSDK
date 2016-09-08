@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "DDWechatSDK"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "DDWechatSDK."
 
   s.description  = <<-DESC
@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/djs66256/DDWechatSDK.git", :tag => "#{s.version}" }
 
   s.source_files = "Wechat/*.{h,m}"
-  s.vendored_libraries = "Wechat/libWeChatSDK.a"
+  s.vendored_libraries = "Wechat/*.{a}"
 
   s.libraries = "sqlite3"
 
