@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   DDWechatSDK desc
                    DESC
 
-  s.homepage     = "http://ooo.mn/DDWechatSDK"
+  s.homepage     = "https://github.com/djs66256/DDWechatSDK"
 
   s.license      = "MIT"
 
@@ -18,9 +18,13 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = "8.0"
 
-  s.source       = { :git => "http://00.kl/DDWechatSDK.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/djs66256/DDWechatSDK.git", :tag => "#{s.version}" }
 
   s.source_files = "Wechat/*.{h,m}"
   s.vendored_libraries = "Wechat/libWeChatSDK.a"
+
+  s.libraries = "sqlite3"
+
+  s.dependency "MOBFoundation"
 
 end
